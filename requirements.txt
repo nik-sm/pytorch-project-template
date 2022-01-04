@@ -1,0 +1,15 @@
+black
+dotted_dict
+flake8
+ipywidgets
+isort
+jupyterlab
+loguru
+numpy
+pandas
+pytype
+tensorboard
+torch
+torchmetrics
+torchvision
+tqdm
