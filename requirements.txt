@@ -8,6 +8,7 @@ loguru
 numpy
 pandas
 pytype
+rope
 tensorboard
 torch
 torchmetrics
