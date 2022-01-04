@@ -31,9 +31,9 @@ print(change.get_description())
 
 For each dataset, define a new `DataModule` inheriting from `BaseDataModule`.
 
-In the case where automatic batching is fine, we can use a ["map-style" dataset](https://pytorch.org/docs/stable/data.html#map-style-datasets) as shown in this example: [pytorch_project_template/data/map_style_dataset.py]().
+In the case where automatic batching is fine, we can use a ["map-style" dataset](https://pytorch.org/docs/stable/data.html#map-style-datasets) as shown in this example: [pytorch_project_template/data/map_style_dataset.py](pytorch_project_template/data/map_style_dataset.py).
 
-When custom batching is desired, we can use an ["iterable-style" dataset](https://pytorch.org/docs/stable/data.html#iterable-style-datasets) as shown in this example: [pytorch_project_template/data/iterable_dataset.py]()
+When custom batching is desired, we can use an ["iterable-style" dataset](https://pytorch.org/docs/stable/data.html#iterable-style-datasets) as shown in this example: [pytorch_project_template/data/iterable_dataset.py](pytorch_project_template/data/iterable_dataset.py)
 
 # Contents
 
