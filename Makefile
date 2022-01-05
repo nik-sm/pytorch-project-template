@@ -13,13 +13,13 @@ all: setup format-and-lint
 
 format-and-lint: 
 	$(PYTHON) -m isort --profile black $(SRC_NAME)
+	$(PYTHON) -m isort --profile black $(SCRIPTS)
 	$(PYTHON) -m black --line-length 120 $(SRC_NAME)
-	# $(PYTHON) -m pytype --jobs auto --keep-going $(SRC_NAME) || echo "Ignore type errors"
+	$(PYTHON) -m black --line-length 120 $(SCRIPTS)
 	$(PYTHON) -m pytype --jobs auto --keep-going $(SRC_NAME)
-	# $(PYTHON) -m pytype --jobs auto --keep-going $(SCRIPTS_NAME) || echo "Ignore type errors"
 	$(PYTHON) -m pytype --jobs auto --keep-going $(SCRIPTS_NAME)
-	# $(PYTHON) -m flake8 --ignore=E203,W503 --max-line-length 120 --statistics $(SRC_NAME) || echo "Ignore flake errors"
 	$(PYTHON) -m flake8 --ignore=E203,W503 --max-line-length 120 --statistics $(SRC_NAME)
+	$(PYTHON) -m flake8 --ignore=E203,W503 --max-line-length 120 --statistics $(SCRIPTS)	
 
 # Project setup
 .PHONY: setup
