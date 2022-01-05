@@ -14,7 +14,7 @@ python scripts/run_experiment.py --name test --epochs 2 --dataset_style iterable
 # Setup for a new project
 
 <details>
-<summary>Rename `pytorch_project_template` for your project</summary>
+  <summary>Rename <code>pytorch_project_template</code> for your project</summary>
 
 In a python interpreter:
 ```python
@@ -23,9 +23,9 @@ from rope.base.project import Project
 from rope.refactor.rename import Rename
 proj = Project(".")
 folder = proj.get_module("pytorch_project_template").get_resource()
-change = Rename(proj, folder).get_changes("NEW_PROJECT_NAME_HERE")     # <- Choose new name
+change = Rename(proj, folder).get_changes("NEW_PROJECT_NAME_HERE")      # <- Choose new name
 print(change.get_description())
-# proj.do(change)
+# proj.do(change)                                                       # When satisfied with the changes
 ```
 </details>
 
